@@ -3,28 +3,86 @@
 
 #slide1,#slide2,#slide3{ width: 100%; }
 #slide1{
-background:url(../img/header-bg.jpg) 50% 0 no-repeat fixed;
+background:url(../img/slider1.jpg) no-repeat fixed;
 color: #fff;
 height: 100vh;
 margin: 0;
-padding: 200px 0 260px 0;
-background-size: cover;
+/*padding: 200px 0 260px 0;*/
+background-size: 100% 100%;
+position: relative;
 }
 
+#moon{
+	position: absolute;
+	top: 50px;
+    right: 50px;
+	transform: rotate(-140deg);
+
+	/* Safari */
+-webkit-transform: rotate(-140deg);
+
+/* Firefox */
+-moz-transform: rotate(-140deg);
+
+/* IE */
+-ms-transform: rotate(-140deg);
+
+/* Opera */
+-o-transform: rotate(-140deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+	
+}
+
+#da{
+	position: absolute;
+	bottom:25px;
+	margin: auto 50%;
+	display: block;
+	-webkit-animation: pulse 2s infinite;
+    animation: pulse 2s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
+
+
 #slide2{
-background:url(../img/slider2.jpg) 50% 0 no-repeat fixed;
+background:url(../img/slider2.jpg) no-repeat fixed;
 color: #fff;
 height: 100vh;
 margin: 0;
-padding: 200px 0 260px 0;
-background-size: cover;
+/*padding: 200px 0 260px 0;*/
+background-size: 100% 100%;
 }
 
 #slide3{
-background:url(../img/slider3.jpg) 50% 0 no-repeat fixed;
+background:url(../img/slider3.jpg) no-repeat fixed;
 color: #fff;
 height: 100vh;
 margin: 0;
-padding: 200px 0 260px 0;
-background-size: cover;
+/*padding: 200px 0 260px 0;*/
+background-size: 100% 100%;
 }
+
+
